@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reviews</title>
+</head>
+<body>
+	{% for review in reviews %}
+		<h1>{{review.name}}</h1>
+		<h3>{{review.email}}</h3>
+		<h2>{{review.rating}}</h2>
+		<h6>{{review.posted_at}}</h6>
+		<p>{{review.review}}</p>
+	{% endfor %}
+
+	<form id="comment-form" action="{% url 'review' %}" method="post" role="form">
+		{% csrf_token %}
+		{{ form }}
+			<button class="btn btn-success" type="submit">Comment Publicly </button> or <a href="{% url 'submit-review' %}">Send a Direct Message</a>
+	</form>
+</body>
+</html>

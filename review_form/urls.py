@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from review.views import Review_Page_View
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', Review_Page_View.as_view(), name='review'),
+
+    path('submit-review/', Review_Page_View.post, name='submit-review'),
 ]
