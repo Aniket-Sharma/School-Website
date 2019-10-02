@@ -14,3 +14,13 @@ How to add this to your Project
   python manage.py runserver
   (if this gives any error, make sure you are in right directory and all the requirements are fullfilled, use python3 instead of python if you also have python2 installed in your system. 
 7. Feel free to contact me, if you still have any difficulty runnning this. 
+
+If you just wanna check it out 
+1. Clone the repository.
+2. Intsall the requirements from requirements.txt .
+3. Makemigrations, and migrate and then runserver using following commands :
+  (Use python3 instead of python if you also have python2 installed in your system)
+  python manage.py makemigrations
+  python manage.py migrate
+  python manage.py runserver
+4. The project should run on '127.0.0.1:8000' on your browser.
