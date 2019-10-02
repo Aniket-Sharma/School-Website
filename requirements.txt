@@ -1,3 +1,7 @@
-Django
-django-admin
-bootstrap4
+bootstrap4==0.1.0
+Django==2.2.6
+django-admin==2.0.0
+django-bootstrap4==1.0.1
+django-excel-response2==2.0.8
+django-six==1.0.4
+Pillow==5.4.1
