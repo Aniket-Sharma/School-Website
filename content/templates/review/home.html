@@ -1,0 +1,26 @@
+{% extends 'layout/page.html' %}
+
+{% load i18n %}
+
+{% load bootstrap4 %}
+
+{% load static %}
+
+{% block content %}
+
+	{% for review in reviews %}
+		<h1>{{review.name}}</h1>
+		<h3>{{review.email}}</h3>
+		<h2>{{review.rating}}</h2>
+		<h6>{{review.posted_at}}</h6>
+		<p>{{review.review}}</p>
+	{% endfor %}
+
+	<form id="comment-form" action="{% url 'review' %}" method="post" role="form" style="padding-left: 15%; padding-right: 15%; background: light-grey ; text-align: center;">
+		{% csrf_token %}
+		<h3>Provide us with your feedback</h3><hr>
+		{% bootstrap_form form layout='inline' %}
+			<button class="btn btn-success" type="submit">Comment Publicly </button> or <a href="{% url 'submit-review' %}">Send us a Direct Message</a>
+	</form>
+
+{% endblock %}

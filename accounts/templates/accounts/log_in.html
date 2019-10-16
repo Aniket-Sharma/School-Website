@@ -1,0 +1,36 @@
+{% extends 'layout/page.html' %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+<div style="display:flex;justify-content:center; align-items:stretch;">
+    <div class="card card-container" style="width: 40%;">
+        <div class="card-title card-header">
+            <h4>{% trans 'Sign in' %}</h4>
+        </div>
+        <div class="card-body">
+            <form method="post">
+
+                {% csrf_token %}
+                {% bootstrap_form form layout='inline' %}
+
+                <button class="btn btn-primary ">{% trans 'Log in' %}</button>
+            </form>
+            <br>
+            <p>Don't have an account
+                <a href="{% url 'accounts:sign_up' %}">{% trans 'Sign up' %}</a>
+            </p>
+            <hr>
+
+            <ul>
+                <li>
+                    <a href="{% url 'accounts:restore_password' %}">{% trans 'Forgot your password?' %}</a>
+                </li>
+                <li>
+                    <a href="{% url 'accounts:resend_activation_code' %}">{% trans 'Resend an activation code' %}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
