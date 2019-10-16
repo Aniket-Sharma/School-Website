@@ -103,42 +103,42 @@
       <div class="col-md-11 mx-auto">
         <div class="row no-gutters">
           <div class="col-md-3">
-            <figure><img src="images/cbse.png" alt="Campus">
+            <figure><img src="{% static 'images/cbse.png'  %}" alt="Campus">
             <figcap>Proposed CBSE School</figcap>
             </figure>
           </div>
           <div class="col-md-3">
-            <figure><img src="images/coed.png" alt="Campus">
+            <figure><img src="{% static 'images/coed.png' %}" alt="Campus">
             <figcap>Co-ed school</figcap>
             </figure>
           </div>
           <div class="col-md-3">
-            <figure><img src="images/green.png" alt="Campus">
+            <figure><img src="{% static 'images/green.png' %}" alt="Campus">
             <figcap>Green School</figcap>
             </figure>
           </div>
           <div class="col-md-3 border-right-0">
-            <figure><img src="images/wifi.png" alt="Campus">
+            <figure><img src="{% static 'images/wifi.png' %}" alt="Campus">
               <figcap>Wi-fi Campus zone</figcap>
             </figure>
           </div>
           <div class="col-md-3 border-bottom-0">
-            <figure><img src="images/modern.png" alt="Campus">
+            <figure><img src="{% static 'images/modern.png' %}" alt="Campus">
             <figcap>Modern Pedagogy</figcap>
             </figure>
           </div>
           <div class="col-md-3 border-bottom-0">
-            <figure><img src="images/transport.png" alt="Campus">
+            <figure><img src="{% static 'images/transport.png' %} " alt="Campus">
             <figcap>GPS-System</figcap>
             </figure>
           </div>
           <div class="col-md-3 border-bottom-0">
-            <figure><img src="images/ac.png" alt="Campus">
+            <figure><img src="{% static 'images/ac.png' %}" alt="Campus">
             <figcap>AC Classrooms</figcap>
             </figure>
           </div>
           <div class="col-md-3 border-bottom-0">
-            <figure><img src="images/play.png" alt="Campus">
+            <figure><img src="{% static 'images/play.png' %}" alt="Campus">
             <figcap>Large Play Area</figcap>
             </figure>
           </div>
@@ -266,9 +266,10 @@
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</p>
           </div>
           <div class="col-lg-5">
-            <form action="" class="d-flex">
-              <input type="text" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
-              <button class="btn btn-primary rounded py-3 px-4" type="submit">Send</button>
+            <form action="{% url 'home' %}" class="d-flex" method="post">
+              {% csrf_token %}
+              {% bootstrap_field form.email layout='inline' %}
+              <button style="margin-left: 30px;" class="btn btn-primary rounded py-3" type="submit">Subscribe</button>
             </form>
           </div>
         </div>

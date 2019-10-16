@@ -26,9 +26,13 @@ urlpatterns = [
     path('submit-review/', ReviewPageView.post, name='submit-review'),
 
     path('home/', HomePageView.as_view(), name='home'),
+    # path('home/<str:email>' HomePageView.as_view() , name='subsribe'),
+
     path('about/', AboutPageView.as_view(), name='about'),
     path('admissions/', AdmissionPageView.as_view(), name='admissions'),
     path('gallery/', GalleryPageView.as_view(), name='gallery'),
     path('contact/', ContactPageView.as_view(), name='contact'),
+
+    # path('contact/send/', send_message , name='send-message'),
 
 ]

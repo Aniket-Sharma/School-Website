@@ -26,8 +26,8 @@ class Teacher(models.Model):
 
 
 class Contact(models.Model):
-    f_name = models.CharField(max_length=10)
-    l_name = models.CharField(max_length=10)
+    first_name = models.CharField(max_length=10)
+    last_name = models.CharField(max_length=10)
     email = models.EmailField()
     tel_no = models.BigIntegerField(null=True, blank=True)
     message = models.CharField(max_length=500)
@@ -35,3 +35,6 @@ class Contact(models.Model):
     def __str__(self):
         return self.email
 
+
+class Subscriber(models.Model):
+    email = models.EmailField()
