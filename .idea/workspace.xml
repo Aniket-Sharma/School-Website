@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="586c6f32-784e-4ecc-90ac-5e4eb6137d05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DAV-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DAV-website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/sign_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/templates/layout/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/templates/layout/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/templates/main/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/templates/main/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/templates/main/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/templates/main/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/templates/main/school_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/templates/main/school_home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/templates/review/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/templates/review/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/review/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/review/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/review/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review_form/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/review_form/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review_form/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/review_form/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/review/admin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
