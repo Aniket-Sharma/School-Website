@@ -1,2 +1,2 @@
-web: gunicorn School-Website.wsgi --log-file -
+web: gunicorn review_form.wsgi --log-file -
 
