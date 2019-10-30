@@ -1,2 +1,2 @@
-web: gunicorn djangoherokuapp.wsgi --log-file -
+web: gunicorn School-Website.wsgi --log-file -
 
