@@ -23,7 +23,7 @@ SECRET_KEY = 'f^y*0dvq0oet*_s31olh!pto#2-fh^iuz_#9k8@=_)sv5c0-d9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['school-website-aniket.herokuapp.com', ]
 
 
 # Application definition
